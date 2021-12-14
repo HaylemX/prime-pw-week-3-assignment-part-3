@@ -10,9 +10,11 @@ console.log('2. Array of supplyChanges:', supplyChanges);
 
 console.log('3. Second supplyChange is:', supplyChanges[1]);
 
-
 let removedNumber = supplyChanges.pop();
 console.log('4. Removed item:')
+
+supplyChanges.push(25);
+console.log('5. Adding 25 to supplyChanges.');
 
 
 
