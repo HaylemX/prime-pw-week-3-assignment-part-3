@@ -18,19 +18,20 @@ console.log('5. Adding 25 to supplyChanges.');
 
 
 let supplyChanges = [3,5,-6,0,7,11];
-  for ( let i = 0; i < supplyChanges.length; i++) {
-    console.log('Add x', supplyChanges[i]);
-
-
 let x = supplyChanges;
 
-for (x > 0) {
-  console.log('Added x parts.');
-} else if (x = 0) {
-  console.log('No Change.');
-} else if {
-  console.log('Removed x parts.');
+for ( let x=0; x < supplyChanges.length; x++) {
+  if ( supplyChanges[x] > 0 ) {
+    console.log('Added x parts.', supplyChanges[x]);
+  } else if ( supplyChanges[x] === 0 ) {
+    console.log('No Change.', supplyChanges[x]);
+  } else if ( supplyChanges[x] < 0 ) {
+    console.log('Removed x parts.', supplyChanges[x]);
+  }
 }
+
+
+
 
 
 
