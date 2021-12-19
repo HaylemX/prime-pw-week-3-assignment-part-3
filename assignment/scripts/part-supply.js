@@ -5,7 +5,7 @@ console.log('****** Part Supply *******');
 var partsNeeded = 40;
 console.log(partsNeeded);
 
-let = supplyChanges = [3,5,-6,0,7,11];
+let supplyChanges = [3,5,-6,0,7,11];
 console.log('2. Array of supplyChanges:', supplyChanges);
 
 console.log('3. Second supplyChange is:', supplyChanges[1]);
@@ -15,6 +15,31 @@ console.log('4. Removed item:')
 
 supplyChanges.push(25);
 console.log('5. Adding 25 to supplyChanges.');
+
+
+let supplyChanges = [3,5,-6,0,7,11];
+  for ( let i = 0; i < supplyChanges.length; i++) {
+    console.log('Add x', supplyChanges[i]);
+
+
+let x = supplyChanges;
+
+for (x > 0) {
+  console.log('Added x parts.');
+} else if (x = 0) {
+  console.log('No Change.');
+} else if {
+  console.log('Removed x parts.');
+}
+
+
+
+// 6. Write a `for` loop that shows each value in the 'supplyChanges' array
+//    Use a console.log formatted as follows, where x is the value from the array
+//    - if it is a positive number (greater than 0), log 'Added x parts.'
+//    - if the value is 0, log 'No Change.'
+//    - if the value is negative, format the log as 'Removed x parts.'
+console.log('6. Showing supplyChanges...');
 
 
 
