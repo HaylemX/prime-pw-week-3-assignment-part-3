@@ -20,7 +20,7 @@ console.log('5. Adding 25 to supplyChanges.');
 let supplyChanges = [3,5,-6,0,7,11];
 let x = supplyChanges;
 
-for of ( let x=0; x < supplyChanges.length; x++) {
+for ( let x=0; x < supplyChanges.length; x++) {
   if ( supplyChanges[x] > 0 ) {
     console.log('Added x parts.', supplyChanges[x]);
   } else if ( supplyChanges[x] === 0 ) {
@@ -30,8 +30,8 @@ for of ( let x=0; x < supplyChanges.length; x++) {
   }
 }
 
-//Stretch 7 Attempt
-for ( const x of [3,5,-6,0,7,11]) {
+//Stretch 7
+for ( const x of supplyChanges) {
   if ( supplyChanges.length > 0) {
     console.log('Added x parts.', supplyChanges[x]);
   } else if ( supplyChanges.length === 0 ) {
@@ -41,6 +41,24 @@ for ( const x of [3,5,-6,0,7,11]) {
   }
 }
 
+//Stretch 8
+
+function supplyChanges(arr){
+  var s = 0
+  for (var i = 0; i<arr.length; i++){
+    s = s + arr[i];
+  }
+  return s;
+}
+var returnedVal = supplyChanges([3,5,-6,0,7,11]);
+console.log('Total supplies available is: ', returnedVal);
+
+//Stretch 9
+
+while ( let x=0; x < 572; x++) {
+  if (x === 572 )
+  console.log('ok');
+}
 
 
 
