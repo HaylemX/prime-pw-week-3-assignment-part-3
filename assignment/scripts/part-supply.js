@@ -54,11 +54,14 @@ var returnedVal = supplyChanges([3,5,-6,0,7,11]);
 console.log('Total supplies available is: ', returnedVal);
 
 //Stretch 9
-
-while ( let x=0; x < 572; x++) {
-  if (x === 572 )
-  console.log('ok');
+let totalParts = 572;
+const maxParts = 7;
+let totalBoxs = 0;
+while (totalBoxs >= 6) {
+  totalParts -= maxParts;
+  totalParts = partsLeft
 }
+console.log(totalParts)
 
 
 
