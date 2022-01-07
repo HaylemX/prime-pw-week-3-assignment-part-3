@@ -2,7 +2,7 @@ console.log('****** Part Supply *******');
 // REQUIRED FEATURES
 
 
-var partsNeeded = 40;
+let partsNeeded = 40;
 console.log(partsNeeded);
 
 let supplyChanges = [3,5,-6,0,7,11];
@@ -11,14 +11,14 @@ console.log('2. Array of supplyChanges:', supplyChanges);
 console.log('3. Second supplyChange is:', supplyChanges[1]);
 
 let removedNumber = supplyChanges.pop();
-console.log('4. Removed item:')
+console.log('4. Removed item:', supplyChanges)
 
 supplyChanges.push(25);
-console.log('5. Adding 25 to supplyChanges.');
+console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 
 
-let supplyChanges = [3,5,-6,0,7,11];
-let x = supplyChanges;
+supplyChanges = [3,5,-6,0,7,11];
+x = supplyChanges;
 
 for ( let x=0; x < supplyChanges.length; x++) {
   if ( supplyChanges[x] > 0 ) {
@@ -31,15 +31,18 @@ for ( let x=0; x < supplyChanges.length; x++) {
 }
 
 //Stretch 7
-for ( const x of supplyChanges) {
-  if ( supplyChanges.length > 0) {
-    console.log('Added x parts.', supplyChanges[x]);
-  } else if ( supplyChanges.length === 0 ) {
-    console.log('No Change.', supplyChanges[x]);
-  } else if ( supplyChanges.length < 0 ) {
-    console.log('Removed x parts.', supplyChanges[x]);
+
+for (let change of supplyChanges) {
+    if ( change > 0 ) {
+      console.log('Added x parts.', change);
+    } else if ( change === 0 ) {
+      console.log('No Change.', change);
+    } else if ( change < 0 ) {
+      console.log('Removed x parts.', change);
+    }
   }
-}
+
+
 
 //Stretch 8
 
