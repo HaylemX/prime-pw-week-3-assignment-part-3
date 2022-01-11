@@ -5,7 +5,7 @@ console.log('****** Part Supply *******');
 let partsNeeded = 40;
 console.log(partsNeeded);
 
-let supplyChanges = [3,5,-6,0,7,11];
+supplyChanges = [3,5,-6,0,7,11];
 console.log('2. Array of supplyChanges:', supplyChanges);
 
 console.log('3. Second supplyChange is:', supplyChanges[1]);
@@ -17,7 +17,7 @@ supplyChanges.push(25);
 console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 
 
-supplyChanges = [3,5,-6,0,7,11];
+
 x = supplyChanges;
 
 for ( let x=0; x < supplyChanges.length; x++) {
@@ -46,14 +46,14 @@ for (let change of supplyChanges) {
 
 //Stretch 8
 
-function supplyChanges(arr){
+function supplyAdd(arr){
   var s = 0
   for (var i = 0; i<arr.length; i++){
     s = s + arr[i];
   }
   return s;
 }
-var returnedVal = supplyChanges([3,5,-6,0,7,11]);
+var returnedVal = supplyAdd([3,5,-6,0,7,11]);
 console.log('Total supplies available is: ', returnedVal);
 
 //Stretch 9
@@ -67,7 +67,7 @@ while (totalBoxs >= 6) {
 console.log(totalParts)
 
 
-
+/*
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
@@ -136,3 +136,4 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+*/
